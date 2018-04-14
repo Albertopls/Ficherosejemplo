@@ -64,16 +64,9 @@ public class FicheroME {
         File file= new File(directorio,NOMBREFICHERO);
         try {
 
+
             BufferedReader lector=new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-
-            String line;
-
-
-            while ((line=lector.readLine())!=null){
-
-                contenido+=line;
-            }
-
+            contenido=lector.readLine();
 
 
         }catch (Exception e)

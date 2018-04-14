@@ -60,13 +60,9 @@ public class FicheroMI {
 
            BufferedReader lector=new BufferedReader(new InputStreamReader(file));
 
-            String line;
 
+            contenido=lector.readLine();
 
-           while ((line=lector.readLine())!=null){
-
-               contenido+=line;
-           }
 
         }catch (Exception e)
         {
